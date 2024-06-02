@@ -7,7 +7,7 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "babel-register tape 'src/saga/saga.spec.js'"
+    "tape": "tape -r @babel/register 'src/saga/saga.spec.js'",
   },
   "dependencies": {
     "@react-native-masked-view/masked-view": "^0.3.0",
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
+    "@babel/register": "^7.24.6",
     "@babel/runtime": "^7.20.0",
     "@react-native/eslint-config": "^0.72.2",
     "@react-native/metro-config": "^0.72.11",
