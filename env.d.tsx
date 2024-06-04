@@ -4,5 +4,6 @@ declare module '@env' {
     export const DOMAIN_URL: string;
     export const DOMAIN_TEST: string;
     export const IMAGE_URL: string;
+    export const GLOBAL_URL: string;
 }
 //export constant trong file env

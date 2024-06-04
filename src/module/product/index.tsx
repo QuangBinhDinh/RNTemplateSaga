@@ -2,13 +2,10 @@ import { TextSemiBold } from '@components/text';
 import { Icon } from '@rneui/base';
 import React, { useEffect } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
-import { useFetchProductInfoQuery } from './service';
 import { goBack } from '@navigation/service';
 
 const ProductDetailScreen = ({ route }: { route: any }) => {
     const { product_id, product_title } = route.params;
-
-    const { data, isLoading } = useFetchProductInfoQuery(9999999999);
 
     useEffect(() => {}, []);
     return (
