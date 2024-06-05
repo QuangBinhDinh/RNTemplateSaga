@@ -1,4 +1,8 @@
 import { api } from '@api/axios';
 import axios from 'axios';
 
-export const getAllPost = () => api.get('post');
+const getAllPost = () => api.get('post');
+
+const getPostById = (id: number) => api.get(`post/${id}`);
+
+export { getAllPost, getPostById };

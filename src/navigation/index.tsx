@@ -8,6 +8,7 @@ import { createSharedElementStackNavigator } from 'react-navigation-shared-eleme
 import ProductDetailScreen from '../module/product';
 import LoadingSpinner from '@components/loading/LoadingSpinner';
 import BottomMessage from '@components/popup/BottomMessage';
+import PostDetailScreen from '../module/home/PostDetailScreen';
 const Stack = createSharedElementStackNavigator();
 
 const Router = () => {
@@ -21,7 +22,7 @@ const Router = () => {
                 }}
             >
                 <Stack.Screen name="App" component={BottomTabs} options={{ animationEnabled: false }} />
-
+                <Stack.Screen name="PostDetail" component={PostDetailScreen} />
                 <Stack.Screen name="ProductDetail" component={ProductDetailScreen} />
             </Stack.Navigator>
         </NavigationContainer>

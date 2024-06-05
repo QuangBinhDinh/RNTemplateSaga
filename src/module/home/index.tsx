@@ -6,10 +6,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { TextSemiBold } from '@components/text';
 import { useAppSelector } from '@store/hook';
-import { getPost } from './reducer/action';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
 import PostItem from './component/PostItem';
+import { fetchAllPost } from './saga/slice';
 
 const HomeScreen = () => {
     const insets = useSafeAreaInsets();
@@ -27,7 +27,7 @@ const HomeScreen = () => {
     };
 
     useEffect(() => {
-        dispatch(getPost());
+        dispatch(fetchAllPost());
     }, []);
 
     // useEffect(() => {
